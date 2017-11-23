@@ -1,0 +1,26 @@
+# This is the configurtation file
+# for the analyst tool
+
+charts:
+
+        - statsMethodName: GetMostPushedToRepositories
+          timePeriodInDays: 7
+          MaxNumberOfElements: 8
+          RepositoriesToIgnore:
+              - "meta/z-dw-harbor-healthcheck-img"
+          titleTemplate: "Most Pushed-To Repositories since {{ startDate }}"
+
+        - statsMethodName: GetMostPushingUsers
+          timePeriodInDays: 7
+          MaxNumberOfElements: 8
+          UsersToIgnore:
+              - "admin"
+          titleTemplate: "Users with most pushes since {{ startDate }}"
+
+        - statsMethodName: GetPushesPerDaytimes
+          timePeriodInDays: 7
+          titleTemplate: "Accumulated pushes per hour of the day since {{ startDate }}"
+
+        - statsMethodName: GetPushesPerDaytimes
+          timePeriodInDays: 9999
+          titleTemplate: "Accumulated pushes per hour since registry setup"
