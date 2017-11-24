@@ -1,5 +1,7 @@
 ## Harbor Analytics
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/demonware/harbor-analytics)](https://goreportcard.com/report/github.com/demonware/harbor-analytics)
+
 ### Automatically generate and publish PDF usage reports about your Harbor docker registry.
 
 ![Example Chart Output](./chart-example.png)
